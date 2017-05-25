@@ -54,5 +54,13 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH dac7512_vlg_tst
 set_global_assignment -name EDA_TEST_BENCH_NAME dac7512_vlg_tst -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id dac7512_vlg_tst
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME dac7512_vlg_tst -section_id dac7512_vlg_tst
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_10 -to clk
+set_location_assignment PIN_53 -to din
+set_location_assignment PIN_99 -to rst_n
+set_location_assignment PIN_52 -to sclk
+set_location_assignment PIN_51 -to sync
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/dac7512.vt -section_id dac7512_vlg_tst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu May 25 16:45:43 2017
+Fitter Status : Successful - Thu May 25 23:43:37 2017
 Quartus II 64-Bit Version : 11.0 Build 157 04/27/2011 SJ Full Version
 Revision Name : dac7512
 Top-level Entity Name : dac7512
 Family : Cyclone
 Device : EP1C3T100C8
 Timing Models : Final
-Total logic elements : 53 / 2,910 ( 2 % )
-Total pins : 17 / 65 ( 26 % )
+Total logic elements : 40 / 2,910 ( 1 % )
+Total pins : 5 / 65 ( 8 % )
 Total virtual pins : 0
 Total memory bits : 0 / 59,904 ( 0 % )
 Total PLLs : 0 / 1 ( 0 % )

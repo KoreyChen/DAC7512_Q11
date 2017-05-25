@@ -4,13 +4,13 @@ rst_n,
 sclk,
 sync,
 din,
-data
+//data
 );
 
 input clk; //时钟输入 50MHz
 input rst_n; //复位信号
-input [11:0] data;//ADC输出数据
-
+//input [11:0] data;//ADC输出数据
+reg [11:0] data = 12'd1638;//ADC输出数据 
 output reg sclk;//DAC时钟
 output reg sync;//同步使能信号
 output reg din;//数据信号
@@ -26,7 +26,7 @@ parameter ST_Stop  = 2;
 //分频器
 reg div_clk;
 reg [7:0] div_count;//分频计数器
-parameter TimeDivSet = 8'd3;//分频计数设置
+parameter TimeDivSet = 8'd50;//分频计数设置
 always @(posedge clk or negedge rst_n)
 begin
 	if(!rst_n)
@@ -109,7 +109,7 @@ begin
 			3'd1:	begin
 						sclk  <= 0;
 						clk_count <= 0;
-						if(count >= 5'd15)
+						if(count > 5'd15)
 						begin
 							state <= ST_Stop;
 						end
@@ -126,6 +126,7 @@ begin
 					clk_count <= 1;
 					end
 			3'd1:	begin
+					sclk  <= 1;
 					end
 			endcase
 		end

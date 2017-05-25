@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dac7512
-Thu May 25 16:45:35 2017
+Thu May 25 23:43:33 2017
 Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
 
 
@@ -14,11 +14,12 @@ Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |dac7512|state
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |dac7512
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |dac7512
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,13 +45,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-----------------------------+-------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu May 25 16:45:35 2017     ;
+; Analysis & Synthesis Status ; Successful - Thu May 25 23:43:33 2017     ;
 ; Quartus II 64-Bit Version   ; 11.0 Build 157 04/27/2011 SJ Full Version ;
 ; Revision Name               ; dac7512                                   ;
 ; Top-level Entity Name       ; dac7512                                   ;
 ; Family                      ; Cyclone                                   ;
-; Total logic elements        ; 59                                        ;
-; Total pins                  ; 17                                        ;
+; Total logic elements        ; 43                                        ;
+; Total pins                  ; 5                                         ;
 ; Total virtual pins          ; 0                                         ;
 ; Total memory bits           ; 0                                         ;
 ; Total PLLs                  ; 0                                         ;
@@ -153,13 +154,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                      ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------+
-; dac7512.v                        ; yes             ; Auto-Found Verilog HDL File  ; C:/EngineeringDocument/FPGA_DOC/DAC7512/dac7512.v ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                              ;
++----------------------------------+-----------------+------------------------------+---------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path    ;
++----------------------------------+-----------------+------------------------------+---------------------------------+
+; dac7512.v                        ; yes             ; Auto-Found Verilog HDL File  ; D:/GitHub/DAC7512_Q11/dac7512.v ;
++----------------------------------+-----------------+------------------------------+---------------------------------+
 
 
 +-----------------------------------------------------+
@@ -167,33 +168,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 59    ;
-;     -- Combinational with no register       ; 24    ;
-;     -- Register only                        ; 12    ;
-;     -- Combinational with a register        ; 23    ;
+; Total logic elements                        ; 43    ;
+;     -- Combinational with no register       ; 19    ;
+;     -- Register only                        ; 4     ;
+;     -- Combinational with a register        ; 20    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 24    ;
+;     -- 4 input functions                    ; 18    ;
 ;     -- 3 input functions                    ; 2     ;
-;     -- 2 input functions                    ; 18    ;
+;     -- 2 input functions                    ; 16    ;
 ;     -- 1 input functions                    ; 2     ;
 ;     -- 0 input functions                    ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 49    ;
+;     -- normal mode                          ; 33    ;
 ;     -- arithmetic mode                      ; 10    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 8     ;
-;     -- asynchronous clear/load mode         ; 35    ;
+;     -- asynchronous clear/load mode         ; 24    ;
 ;                                             ;       ;
-; Total registers                             ; 35    ;
+; Total registers                             ; 24    ;
 ; Total logic cells in carry chains           ; 12    ;
-; I/O pins                                    ; 17    ;
+; I/O pins                                    ; 5     ;
 ; Maximum fan-out node                        ; rst_n ;
-; Maximum fan-out                             ; 35    ;
-; Total fan-out                               ; 253   ;
-; Average fan-out                             ; 3.33  ;
+; Maximum fan-out                             ; 24    ;
+; Total fan-out                               ; 183   ;
+; Average fan-out                             ; 3.81  ;
 +---------------------------------------------+-------+
 
 
@@ -202,7 +203,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |dac7512                   ; 59 (59)     ; 35           ; 0           ; 17   ; 0            ; 24 (24)      ; 12 (12)           ; 23 (23)          ; 12 (12)         ; 0 (0)      ; |dac7512            ;              ;
+; |dac7512                   ; 43 (43)     ; 24           ; 0           ; 5    ; 0            ; 19 (19)      ; 4 (4)             ; 20 (20)          ; 12 (12)         ; 0 (0)      ; |dac7512            ;              ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,17 +220,28 @@ Encoding Type:  One-Hot
 +----------------+----------------+---------------+---------------+
 
 
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; data_reg[0,3,4,7,8,11]                 ; Stuck at GND due to stuck port data_in ;
+; data_reg[1,2,5,6,9]                    ; Merged with data_reg[10]               ;
+; Total Number of Removed Registers = 11 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 35    ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 35    ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 20    ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -240,7 +252,7 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered            ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+-----------------------+----------------------------+
 ; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; |dac7512|clk_count[2] ;                            ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |dac7512|Selector5    ;                            ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |dac7512|Selector6    ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+-----------------------+----------------------------+
 
 
@@ -252,7 +264,7 @@ Encoding Type:  One-Hot
 ; ST_Start       ; 0        ; Signed Integer                              ;
 ; ST_Data        ; 1        ; Signed Integer                              ;
 ; ST_Stop        ; 2        ; Signed Integer                              ;
-; TimeDivSet     ; 00000011 ; Unsigned Binary                             ;
+; TimeDivSet     ; 00110010 ; Unsigned Binary                             ;
 +----------------+----------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -272,9 +284,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
-    Info: Processing started: Thu May 25 16:45:34 2017
+    Info: Processing started: Thu May 25 23:43:32 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dac7512 -c dac7512
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (10238): Verilog Module Declaration warning at dac7512.v(8): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "dac7512"
 Warning: Using design file dac7512.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: dac7512
 Info: Elaborating entity "dac7512" for the top level hierarchy
@@ -282,14 +295,14 @@ Warning (10230): Verilog HDL assignment warning at dac7512.v(39): truncated valu
 Warning (10230): Verilog HDL assignment warning at dac7512.v(65): truncated value with size 32 to match size of target (3)
 Warning (10230): Verilog HDL assignment warning at dac7512.v(107): truncated value with size 32 to match size of target (5)
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 76 device resources after synthesis - the final resource count might be different
-    Info: Implemented 14 input pins
+Info: Implemented 48 device resources after synthesis - the final resource count might be different
+    Info: Implemented 2 input pins
     Info: Implemented 3 output pins
-    Info: Implemented 59 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Implemented 43 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 366 megabytes
-    Info: Processing ended: Thu May 25 16:45:35 2017
+    Info: Processing ended: Thu May 25 23:43:33 2017
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
