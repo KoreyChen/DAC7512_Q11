@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\EngineeringDocument\FPGA_DOC\DAC7512\simulation\modelsim
+vdac7512
+IHRLEI7?@TzMcT8:jAMZgS3
+V@3d]75NM>?9R;jO`2H9Sd3
+Z1 dC:\EngineeringDocument\FPGA_DOC\DAC7512\simulation\modelsim
+w1495701631
+8C:/EngineeringDocument/FPGA_DOC/DAC7512/dac7512.v
+FC:/EngineeringDocument/FPGA_DOC/DAC7512/dac7512.v
+L0 1
+Z2 OV;L;6.6d;45
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!s100 J:;kU4=cWB`^:MemWjiHV2
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/EngineeringDocument/FPGA_DOC/DAC7512 -O0
+vdac7512_vlg_tst
+!s100 0KX?2^<?IYg@P2SDlUnmh0
+IXozOnY]SAJL[2SOnB5FoB3
+Ve@:7eY:^3a^iN3f[ZOD5N3
+R1
+w1495699962
+8C:/EngineeringDocument/FPGA_DOC/DAC7512/simulation/modelsim/dac7512.vt
+FC:/EngineeringDocument/FPGA_DOC/DAC7512/simulation/modelsim/dac7512.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/EngineeringDocument/FPGA_DOC/DAC7512/simulation/modelsim -O0

@@ -1,0 +1,38 @@
+# Reading C:/altera/11.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do dac7512_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\11.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\11.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/FPGA_DOC/DAC7512 {C:/EngineeringDocument/FPGA_DOC/DAC7512/dac7512.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module dac7512
+# 
+# Top level modules:
+# 	dac7512
+# 
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/FPGA_DOC/DAC7512/simulation/modelsim {C:/EngineeringDocument/FPGA_DOC/DAC7512/simulation/modelsim/dac7512.vt}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module dac7512_vlg_tst
+# 
+# Top level modules:
+# 	dac7512_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone_ver -L rtl_work -L work -voptargs="+acc" dac7512_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps dac7512_vlg_tst 
+# Loading work.dac7512_vlg_tst
+# Loading work.dac7512
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave sim:/dac7512_vlg_tst/i1/*

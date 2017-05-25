@@ -1,0 +1,6 @@
+
+State Machine - |dac7512|state
+Name state.ST_Start state.ST_Stop state.ST_Data 
+state.ST_Start 0 0 0 
+state.ST_Data 1 0 1 
+state.ST_Stop 1 1 0 
